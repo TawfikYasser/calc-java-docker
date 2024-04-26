@@ -1,0 +1,7 @@
+* Create the Dockerfile using touch Dockerfile
+* Create the java class using touch Main.java
+* Copy the java code into Main.java
+* Test it locally using: javac Main.java then java Main
+* Package and build the image using: docker build -t calc-app .
+* Create a container from the image (Running in background): docker run -it --name calccontainer -d calc-app
+* Attach to it using: docker exec -it calccontainer java Main
